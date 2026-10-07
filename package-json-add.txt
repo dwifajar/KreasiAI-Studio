@@ -1,0 +1,5 @@
+ADD THIS SINGLE DEPENDENCY to the existing "dependencies" object in package.json:
+
+"@fontsource/inter": "5.3.0",
+
+Do not replace the whole package.json. Keep all existing dependencies, including ffmpeg-static.
