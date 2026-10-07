@@ -45,15 +45,7 @@ async function findFont() {
     '/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf',
   ].filter(Boolean) as string[];
 
-  try {
-    const exact = runtimeRequire.resolve('inter-font/Inter-VariableFont_slnt,wght.ttf');
-    candidates.unshift(exact);
-  } catch {}
 
-  try {
-    const packageJson = runtimeRequire.resolve('inter-font/package.json');
-    candidates.unshift(path.join(path.dirname(packageJson), packageFont));
-  } catch {}
 
   for (const candidate of candidates) {
     try { await fs.access(candidate); return candidate; } catch {}
