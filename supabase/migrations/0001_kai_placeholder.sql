@@ -1,2 +1,0 @@
--- KreasiAI intentionally starts at 0002 because this project is being installed into
--- an existing Supabase project (BANI MAD KAMARI). Run 0002_kai_saas.sql in that project.
